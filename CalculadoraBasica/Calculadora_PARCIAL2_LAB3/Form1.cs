@@ -26,18 +26,18 @@ namespace Calculadora_PARCIAL2_LAB3
 
             if (analizarParentesis(cadena))
             {
-                MessageBox.Show("PARENTESIS CORRECTOS");
+                var operation = new System.Data.DataTable();
+                double result = Convert.ToDouble(new DataTable().Compute(cadena, null));
+                textBoxRESULTADO.Text = result.ToString();
             }
             else
             {
-                MessageBox.Show("PARENTESIS INCORRECTOS");
+                MessageBox.Show("ERROR EN LOS PARENTESIS");
             }
 
             //Analizar formula
                         
-            var operation = new System.Data.DataTable();
-            double result = Convert.ToDouble(new DataTable().Compute(cadena, null));
-            MessageBox.Show(result.ToString());
+            
 
 
         }
@@ -47,6 +47,7 @@ namespace Calculadora_PARCIAL2_LAB3
             //Decalaracion de variables
             int cantINIP = 0;
             int cantFINP = 0;
+            bool verEspacio = true;
 
             //Bucle que recorre el String
             for (int i = 0; i < cadena.Length; i++)
@@ -54,6 +55,10 @@ namespace Calculadora_PARCIAL2_LAB3
                 if (cadena.Substring(i).Equals("("))
                 {
                     cantINIP++;
+                    if (cadena.Substring(i + 1).Equals(")"))
+                    {
+                        verEspacio = false;
+                    }
 
                 }
                 else if (cadena.Substring(i).Equals(")"))
@@ -62,7 +67,7 @@ namespace Calculadora_PARCIAL2_LAB3
                 }
             }
 
-            if (cantFINP == cantINIP)
+            if (cantFINP == cantINIP && verEspacio )
             {
                 return true;
             }

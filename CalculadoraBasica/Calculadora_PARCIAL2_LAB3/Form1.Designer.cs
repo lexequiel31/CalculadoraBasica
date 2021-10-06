@@ -49,13 +49,15 @@ namespace Calculadora_PARCIAL2_LAB3
             this.buttonPRODUCTO = new System.Windows.Forms.Button();
             this.buttonBORRAR = new System.Windows.Forms.Button();
             this.buttonIGUAL = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxRESULTADO = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBoxFORMULA
             // 
             this.textBoxFORMULA.Location = new System.Drawing.Point(64, 65);
             this.textBoxFORMULA.Name = "textBoxFORMULA";
-            this.textBoxFORMULA.Size = new System.Drawing.Size(439, 23);
+            this.textBoxFORMULA.Size = new System.Drawing.Size(362, 23);
             this.textBoxFORMULA.TabIndex = 1;
             // 
             // button1
@@ -247,11 +249,29 @@ namespace Calculadora_PARCIAL2_LAB3
             this.buttonIGUAL.UseVisualStyleBackColor = true;
             this.buttonIGUAL.Click += new System.EventHandler(this.buttonIGUAL_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(433, 72);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(15, 15);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "=";
+            // 
+            // textBoxRESULTADO
+            // 
+            this.textBoxRESULTADO.Location = new System.Drawing.Point(455, 64);
+            this.textBoxRESULTADO.Name = "textBoxRESULTADO";
+            this.textBoxRESULTADO.Size = new System.Drawing.Size(100, 23);
+            this.textBoxRESULTADO.TabIndex = 22;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(570, 450);
+            this.Controls.Add(this.textBoxRESULTADO);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonIGUAL);
             this.Controls.Add(this.buttonBORRAR);
             this.Controls.Add(this.buttonPRODUCTO);
@@ -301,6 +321,8 @@ namespace Calculadora_PARCIAL2_LAB3
         private System.Windows.Forms.Button buttonPRODUCTO;
         private System.Windows.Forms.Button buttonBORRAR;
         private System.Windows.Forms.Button buttonIGUAL;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxRESULTADO;
     }
 }
 
