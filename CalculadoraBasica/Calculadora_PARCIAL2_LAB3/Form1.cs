@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 
+
+
 namespace Calculadora_PARCIAL2_LAB3
 {
     public partial class Form1 : Form
@@ -32,9 +34,10 @@ namespace Calculadora_PARCIAL2_LAB3
             }
 
             //Analizar formula
-
-            
-
+                        
+            var operation = new System.Data.DataTable();
+            double result = Convert.ToDouble(new DataTable().Compute(cadena, null));
+            MessageBox.Show(result.ToString());
 
 
         }

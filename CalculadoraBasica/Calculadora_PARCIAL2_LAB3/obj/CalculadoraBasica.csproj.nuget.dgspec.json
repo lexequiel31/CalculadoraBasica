@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lexequiel31\\Documents\\TSUP\\LAB III\\Proyectos\\Calculadora_PARCIAL2_LAB3\\Calculadora_PARCIAL2_LAB3\\CalculadoraBasica.csproj": {}
+    "C:\\Users\\lexequiel31\\Documents\\GitHub\\CalculadoraBasica\\CalculadoraBasica\\Calculadora_PARCIAL2_LAB3\\CalculadoraBasica.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lexequiel31\\Documents\\TSUP\\LAB III\\Proyectos\\Calculadora_PARCIAL2_LAB3\\Calculadora_PARCIAL2_LAB3\\CalculadoraBasica.csproj": {
+    "C:\\Users\\lexequiel31\\Documents\\GitHub\\CalculadoraBasica\\CalculadoraBasica\\Calculadora_PARCIAL2_LAB3\\CalculadoraBasica.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lexequiel31\\Documents\\TSUP\\LAB III\\Proyectos\\Calculadora_PARCIAL2_LAB3\\Calculadora_PARCIAL2_LAB3\\CalculadoraBasica.csproj",
+        "projectUniqueName": "C:\\Users\\lexequiel31\\Documents\\GitHub\\CalculadoraBasica\\CalculadoraBasica\\Calculadora_PARCIAL2_LAB3\\CalculadoraBasica.csproj",
         "projectName": "CalculadoraBasica",
-        "projectPath": "C:\\Users\\lexequiel31\\Documents\\TSUP\\LAB III\\Proyectos\\Calculadora_PARCIAL2_LAB3\\Calculadora_PARCIAL2_LAB3\\CalculadoraBasica.csproj",
+        "projectPath": "C:\\Users\\lexequiel31\\Documents\\GitHub\\CalculadoraBasica\\CalculadoraBasica\\Calculadora_PARCIAL2_LAB3\\CalculadoraBasica.csproj",
         "packagesPath": "C:\\Users\\lexequiel31\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lexequiel31\\Documents\\TSUP\\LAB III\\Proyectos\\Calculadora_PARCIAL2_LAB3\\Calculadora_PARCIAL2_LAB3\\obj\\",
+        "outputPath": "C:\\Users\\lexequiel31\\Documents\\GitHub\\CalculadoraBasica\\CalculadoraBasica\\Calculadora_PARCIAL2_LAB3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
