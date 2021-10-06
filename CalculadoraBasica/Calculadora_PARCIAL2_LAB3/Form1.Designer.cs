@@ -51,6 +51,7 @@ namespace Calculadora_PARCIAL2_LAB3
             this.buttonIGUAL = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxRESULTADO = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxFORMULA
@@ -265,11 +266,21 @@ namespace Calculadora_PARCIAL2_LAB3
             this.textBoxRESULTADO.Size = new System.Drawing.Size(100, 23);
             this.textBoxRESULTADO.TabIndex = 22;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(64, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(121, 15);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "PARCIAL II - GRUPO 8";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(570, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxRESULTADO);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.buttonIGUAL);
@@ -293,7 +304,7 @@ namespace Calculadora_PARCIAL2_LAB3
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBoxFORMULA);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calculadora";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -323,6 +334,7 @@ namespace Calculadora_PARCIAL2_LAB3
         private System.Windows.Forms.Button buttonIGUAL;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxRESULTADO;
+        private System.Windows.Forms.Label label2;
     }
 }
 
