@@ -1,0 +1,15 @@
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\bin\Debug\netcoreapp3.1\CalculadoraBasica.exe
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\bin\Debug\netcoreapp3.1\CalculadoraBasica.deps.json
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\bin\Debug\netcoreapp3.1\CalculadoraBasica.runtimeconfig.json
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\bin\Debug\netcoreapp3.1\CalculadoraBasica.runtimeconfig.dev.json
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\bin\Debug\netcoreapp3.1\CalculadoraBasica.dll
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\bin\Debug\netcoreapp3.1\CalculadoraBasica.pdb
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\obj\Debug\netcoreapp3.1\Calculadora_PARCIAL2_LAB3.Form1.resources
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\obj\Debug\netcoreapp3.1\CalculadoraBasica.csproj.GenerateResource.cache
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\obj\Debug\netcoreapp3.1\CalculadoraBasica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\obj\Debug\netcoreapp3.1\CalculadoraBasica.AssemblyInfoInputs.cache
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\obj\Debug\netcoreapp3.1\CalculadoraBasica.AssemblyInfo.cs
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\obj\Debug\netcoreapp3.1\CalculadoraBasica.csproj.CoreCompileInputs.cache
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\obj\Debug\netcoreapp3.1\CalculadoraBasica.dll
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\obj\Debug\netcoreapp3.1\CalculadoraBasica.pdb
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\obj\Debug\netcoreapp3.1\CalculadoraBasica.genruntimeconfig.cache

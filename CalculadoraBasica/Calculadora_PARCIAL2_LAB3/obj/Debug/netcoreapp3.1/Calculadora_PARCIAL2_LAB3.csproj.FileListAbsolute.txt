@@ -1,0 +1,16 @@
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\bin\Debug\netcoreapp3.1\Calculadora_PARCIAL2_LAB3.exe
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\bin\Debug\netcoreapp3.1\Calculadora_PARCIAL2_LAB3.deps.json
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\bin\Debug\netcoreapp3.1\Calculadora_PARCIAL2_LAB3.runtimeconfig.json
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\bin\Debug\netcoreapp3.1\Calculadora_PARCIAL2_LAB3.runtimeconfig.dev.json
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\bin\Debug\netcoreapp3.1\Calculadora_PARCIAL2_LAB3.dll
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\bin\Debug\netcoreapp3.1\Calculadora_PARCIAL2_LAB3.pdb
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\obj\Debug\netcoreapp3.1\Calculadora_PARCIAL2_LAB3.csproj.AssemblyReference.cache
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\obj\Debug\netcoreapp3.1\Calculadora_PARCIAL2_LAB3.Form1.resources
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\obj\Debug\netcoreapp3.1\Calculadora_PARCIAL2_LAB3.csproj.GenerateResource.cache
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\obj\Debug\netcoreapp3.1\Calculadora_PARCIAL2_LAB3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\obj\Debug\netcoreapp3.1\Calculadora_PARCIAL2_LAB3.AssemblyInfoInputs.cache
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\obj\Debug\netcoreapp3.1\Calculadora_PARCIAL2_LAB3.AssemblyInfo.cs
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\obj\Debug\netcoreapp3.1\Calculadora_PARCIAL2_LAB3.csproj.CoreCompileInputs.cache
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\obj\Debug\netcoreapp3.1\Calculadora_PARCIAL2_LAB3.dll
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\obj\Debug\netcoreapp3.1\Calculadora_PARCIAL2_LAB3.pdb
+C:\Users\lexequiel31\Documents\TSUP\LAB III\Proyectos\Calculadora_PARCIAL2_LAB3\Calculadora_PARCIAL2_LAB3\obj\Debug\netcoreapp3.1\Calculadora_PARCIAL2_LAB3.genruntimeconfig.cache
