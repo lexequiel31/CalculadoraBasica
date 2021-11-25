@@ -239,6 +239,7 @@ namespace Calculadora_PARCIAL2_LAB3
             this.buttonBORRAR.TabIndex = 19;
             this.buttonBORRAR.Text = "C";
             this.buttonBORRAR.UseVisualStyleBackColor = true;
+            this.buttonBORRAR.Click += new System.EventHandler(this.buttonBORRAR_Click);
             // 
             // buttonIGUAL
             // 

@@ -32,7 +32,7 @@ namespace Calculadora_PARCIAL2_LAB3
             }
             else
             {
-                MessageBox.Show("ERROR EN LOS PARENTESIS");
+                MessageBox.Show("ERROR EN LA EXPRESION");
             }
 
             //Analizar formula
@@ -48,10 +48,12 @@ namespace Calculadora_PARCIAL2_LAB3
             int cantINIP = 0;
             int cantFINP = 0;
             bool verEspacio = true;
+            bool verDivcero = true;
 
             //Bucle que recorre el String
             for (int i = 0; i < cadena.Length; i++)
             {
+                //Analizar parentesis
                 if (cadena.Substring(i).Equals("("))
                 {
                     cantINIP++;
@@ -65,9 +67,25 @@ namespace Calculadora_PARCIAL2_LAB3
                 {
                     cantFINP++;
                 }
+
+                
             }
 
-            if (cantFINP == cantINIP && verEspacio )
+
+            //Analiza division por cero
+            for (int i = 0; i < cadena.Length; i++)
+            {
+                if (cadena.Substring(i).Equals("/"))
+                {
+                    if (cadena.Substring(i + 1).Equals("0"))
+                    {
+                        verDivcero = false;
+                        Console.Write(cadena.Substring(i + 1));
+                    }
+                }
+            }
+
+                if (cantFINP == cantINIP && verEspacio && verDivcero )
             {
                 return true;
             }
@@ -163,6 +181,10 @@ namespace Calculadora_PARCIAL2_LAB3
             textBoxFORMULA.Text = textBoxFORMULA.Text + "*";
         }
 
-        
+        private void buttonBORRAR_Click(object sender, EventArgs e)
+        {
+            textBoxFORMULA.Text = null;
+
+        }
     }
 }
