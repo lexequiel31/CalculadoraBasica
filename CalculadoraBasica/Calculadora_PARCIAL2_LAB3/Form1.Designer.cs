@@ -52,6 +52,7 @@ namespace Calculadora_PARCIAL2_LAB3
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxRESULTADO = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBoxFORMULA
@@ -275,12 +276,23 @@ namespace Calculadora_PARCIAL2_LAB3
             this.label2.Size = new System.Drawing.Size(121, 15);
             this.label2.TabIndex = 23;
             this.label2.Text = "PARCIAL II - GRUPO 8";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(216, 13);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(179, 15);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "PIRIZ, Carla - MORENO, Exequiel";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(570, 450);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxRESULTADO);
             this.Controls.Add(this.label1);
@@ -336,6 +348,7 @@ namespace Calculadora_PARCIAL2_LAB3
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxRESULTADO;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 

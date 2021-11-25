@@ -24,10 +24,9 @@ namespace Calculadora_PARCIAL2_LAB3
         {
             String cadena = textBoxFORMULA.Text;
 
-            if (analizarParentesis(cadena))
+            if (analizar(cadena))
             {
-                var operation = new System.Data.DataTable();
-                double result = Convert.ToDouble(new DataTable().Compute(cadena, null));
+                var result = calcular(cadena);
                 textBoxRESULTADO.Text = result.ToString();
             }
             else
@@ -41,14 +40,15 @@ namespace Calculadora_PARCIAL2_LAB3
 
 
         }
+              
         
-        public bool analizarParentesis(String cadena)
+        public bool analizar(String cadena)
         {
             //Decalaracion de variables
             int cantINIP = 0;
             int cantFINP = 0;
             bool verEspacio = true;
-            bool verDivcero = true;
+            
 
             //Bucle que recorre el String
             for (int i = 0; i < cadena.Length; i++)
@@ -71,21 +71,26 @@ namespace Calculadora_PARCIAL2_LAB3
                 
             }
 
-
-            //Analiza division por cero
+            //Analizar Div 0
             for (int i = 0; i < cadena.Length; i++)
             {
-                if (cadena.Substring(i).Equals("/"))
+                
+                //Analizar parentesis
+                if (cadena.Substring(i).Equals("0"))
                 {
-                    if (cadena.Substring(i + 1).Equals("0"))
+
+                    
+                    if (cadena.Substring(i - 1).Equals("/0"))
                     {
-                        verDivcero = false;
-                        Console.Write(cadena.Substring(i + 1));
+                        verEspacio = false;
+                        MessageBox.Show("DIV CERO");
                     }
+
                 }
+                
             }
 
-                if (cantFINP == cantINIP && verEspacio && verDivcero )
+            if (cantFINP == cantINIP && verEspacio )
             {
                 return true;
             }
@@ -94,6 +99,14 @@ namespace Calculadora_PARCIAL2_LAB3
                 return false;
             }
 
+        }
+
+        public double calcular(String cadena)
+        {
+            var operation = new System.Data.DataTable();
+            double result = Convert.ToDouble(new DataTable().Compute(cadena, null));
+
+            return result;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -184,6 +197,11 @@ namespace Calculadora_PARCIAL2_LAB3
         private void buttonBORRAR_Click(object sender, EventArgs e)
         {
             textBoxFORMULA.Text = null;
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
 
         }
     }
