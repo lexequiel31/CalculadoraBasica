@@ -24,73 +24,25 @@ namespace Calculadora_PARCIAL2_LAB3
         {
             String cadena = textBoxFORMULA.Text;
 
+            
             if (analizar(cadena))
             {
-                var result = calcular(cadena);
+                var result = Evaluar(cadena);
+                
                 textBoxRESULTADO.Text = result.ToString();
             }
             else
             {
                 MessageBox.Show("ERROR EN LA EXPRESION");
             }
-
-            //Analizar formula
-                        
-            
-
-
         }
               
         
         public bool analizar(String cadena)
         {
-            //Decalaracion de variables
-            int cantINIP = 0;
-            int cantFINP = 0;
-            bool verEspacio = true;
-            
-
-            //Bucle que recorre el String
-            for (int i = 0; i < cadena.Length; i++)
-            {
-                //Analizar parentesis
-                if (cadena.Substring(i).Equals("("))
-                {
-                    cantINIP++;
-                    if (cadena.Substring(i + 1).Equals(")"))
-                    {
-                        verEspacio = false;
-                    }
-
-                }
-                else if (cadena.Substring(i).Equals(")"))
-                {
-                    cantFINP++;
-                }
-
-                
-            }
-
-            //Analizar Div 0
-            for (int i = 0; i < cadena.Length; i++)
-            {
-                
-                //Analizar parentesis
-                if (cadena.Substring(i).Equals("0"))
-                {
-
-                    
-                    if (cadena.Substring(i - 1).Equals("/0"))
-                    {
-                        verEspacio = false;
-                        MessageBox.Show("DIV CERO");
-                    }
-
-                }
-                
-            }
-
-            if (cantFINP == cantINIP && verEspacio )
+           
+            //Analizar
+            if (analisisOperadores(cadena) && analisisParentesis(cadena) && analizarDivCero(cadena))
             {
                 return true;
             }
@@ -98,17 +50,143 @@ namespace Calculadora_PARCIAL2_LAB3
             {
                 return false;
             }
-
+            
         }
 
-        public double calcular(String cadena)
+        public bool analizarDivCero(String cadena)
         {
-            var operation = new System.Data.DataTable();
-            double result = Convert.ToDouble(new DataTable().Compute(cadena, null));
+            bool ver = true;
+            //Analizar Div 0
+            for (int i = 0; i < cadena.Length; i++)
+            {
 
-            return result;
+                //Analizar parentesis
+                if (cadena[i] == '0' )
+                {
+                    if (cadena[i-1] == '/')
+                    {
+                        ver = false;
+                        MessageBox.Show("DIV CERO");
+                    }
+
+                }
+
+            }
+
+            return ver;
         }
 
+        public bool analisisOperadores(String cadena)
+        {
+            bool ver = true;
+
+            for (int i = 0; i<cadena.Length; i++)
+            {
+                if(cadena[i] == '/' || cadena[i] == '*' || cadena[i] == '+' || cadena[i] == '-')
+                {
+                    if(i == 0)
+                    {
+                        ver = false;
+
+                    }else if(i == cadena.Length - 1){
+                        
+                        ver = false;
+                    }
+                    else if(cadena[i-1] == '/' || cadena[i - 1] == '*' || cadena[i - 1] == '+' || cadena[i - 1] == '-')
+                    {
+                        ver = false;
+                    }
+                    else if(cadena[i+1] == '/' || cadena[i + 1] == '*' || cadena[i + 1] == '+' || cadena[i + 1] == '-')
+                    {
+                        ver = false;
+                    }
+                }
+            }
+
+            return ver;
+        }
+
+        public bool analisisParentesis(String cadena)
+        {
+            bool verpar = true;
+
+            for (int i = 0; i < cadena.Length; i++)
+            {
+                if (cadena[i] == ')')
+                {
+                    if (i == 0)
+                    {
+                        verpar = false;
+
+                    }
+                    else if (cadena[i - 1] == '/' || cadena[i - 1] == '*' || cadena[i - 1] == '+' || cadena[i - 1] == '-')
+                    {
+                        verpar = false;
+                    }
+                    else if (cadena[i + 1] == '(')
+                    {
+                        verpar = false;
+                    }
+                }
+
+                if (cadena[i] == '(')
+                {
+                    if (i == cadena.Length-1)
+                    {
+                        verpar = false;
+
+                    }
+                    else if (cadena[i + 1] == '/' || cadena[i + 1] == '*' || cadena[i + 1] == '+' || cadena[i + 1] == '-')
+                    {
+                        verpar = false;
+                    }
+                    else if (cadena[i + 1] == ')')
+                    {
+                        verpar = false;
+                    }
+                }
+            }
+
+            return verpar;
+        }
+
+        
+        public static double Evaluar(String cadena)
+
+        {
+            String expr = "(" + cadena + ")";
+            Stack<String> ops = new Stack<String>();
+            Stack<Double> vals = new Stack<Double>();
+
+            for (int i = 0; i < expr.Length; i++)
+            {
+                String s = expr.Substring(i, 1);
+                if (s.Equals("(")) { }
+                else if (s.Equals("+")) ops.Push(s);
+                else if (s.Equals("-")) ops.Push(s);
+                else if (s.Equals("*")) ops.Push(s);
+                else if (s.Equals("/")) ops.Push(s);
+                else if (s.Equals(")"))
+                {
+                    int count = ops.Count;
+                    while (count > 0)
+                    {
+                        String op = ops.Pop();
+                        double v = vals.Pop();
+                        if (op.Equals("+")) v = vals.Pop() + v;
+                        else if (op.Equals("-")) v = vals.Pop() - v;
+                        else if (op.Equals("*")) v = vals.Pop() * v;
+                        else if (op.Equals("/")) v = vals.Pop() / v;
+                        vals.Push(v);
+
+                        count--;
+                    }
+                }
+                else vals.Push(Double.Parse(s));
+            }
+            return vals.Pop();
+        }
+                
         private void button1_Click(object sender, EventArgs e)
         {
             textBoxFORMULA.Text = textBoxFORMULA.Text + "1";
